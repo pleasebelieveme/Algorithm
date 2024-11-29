@@ -8,7 +8,6 @@ import java.util.StringTokenizer;
 
 public class N10871_X보다작은수 {
     public static void main(String[] args) throws IOException {
-        // 첫 번째 입력 받기
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();  // 배열의 크기
@@ -22,30 +21,29 @@ public class N10871_X보다작은수 {
         }
 
         // Scanner를 사용하여 출력
-        printWithScanner(N, X, arr);
+        scanner(N, X, arr);
 
         // StringBuilder를 사용하여 출력
-        sb(N, X, arr);
+        stringBuilder(N, X, arr);
 
         // BufferedReader와 StringTokenizer를 사용하여 출력
-        br(N, X, arr);
+        stringTokenizerWithBufferedReader(N, X, arr);
 
         // Scanner 닫기
         sc.close();
     }
 
     // Scanner를 사용하여 X보다 작은 값들만 출력하는 함수
-    public static void printWithScanner(int N, int X, int[] arr) {
+    public static void scanner(int N, int X, int[] arr) {
         for (int i = 0; i < N; i++) {
             if (arr[i] < X) {
                 System.out.print(arr[i] + " ");
             }
         }
-        System.out.println();  // 줄바꿈
     }
 
     // StringBuilder를 사용하여 X보다 작은 값들만 출력하는 함수
-    public static void sb(int N, int X, int[] arr) {
+    public static void stringBuilder(int N, int X, int[] arr) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < N; i++) {
             if (arr[i] < X) {
@@ -56,7 +54,7 @@ public class N10871_X보다작은수 {
     }
 
     // BufferedReader와 StringTokenizer를 사용하여 X보다 작은 값들만 출력하는 함수
-    public static void br(int N, int X, int[] arr) throws IOException {
+    public static void stringTokenizerWithBufferedReader(int N, int X, int[] arr) throws IOException {
         // BufferedReader로 입력 받기
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
