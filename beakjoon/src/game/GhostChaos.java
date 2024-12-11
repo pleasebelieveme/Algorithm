@@ -7,7 +7,7 @@ import java.util.List;
 public class GhostChaos {
     public static void main(String[] args) {
         String[] objects = {"whiteGhost", "redChair", "blueBook", "greenBottle", "grayMouse"};
-        String[] card = {"blueBook", "greenMouse"};
+        String[] card = {"whiteBook", "greenMouse"};
         String answer = null;
 
 
