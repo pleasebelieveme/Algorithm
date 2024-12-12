@@ -6,9 +6,9 @@ import java.util.StringTokenizer;
 
 public class N2920_음계 {
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // String만 가능
         int[] arr = new int[8];  //배열 선언
-        StringTokenizer st = new StringTokenizer(br.readLine());
+        StringTokenizer st = new StringTokenizer(br.readLine()); // 공백으로 나누어줌
         //배열에 입력받기
         for (int i = 0; i < 8; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
