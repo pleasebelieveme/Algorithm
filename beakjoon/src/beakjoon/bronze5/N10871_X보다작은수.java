@@ -10,14 +10,14 @@ public class N10871_X보다작은수 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
-        int N = sc.nextInt();  // 배열의 크기
-        int X = sc.nextInt();  // 비교할 값
+        int N = sc.nextInt();  // 배열의 갯수 10
+        int X = sc.nextInt();  // 비교값 5
 
-        int[] arr = new int[N];
+        int[] arr = new int[N]; // N개의 수열
 
         // 배열에 N개의 값 입력 받기
         for (int i = 0; i < N; i++) {
-            arr[i] = sc.nextInt();
+            arr[i] = sc.nextInt(); //  1 10 4 9 2 3 8 5 7 6 => 1 4 2 3
         }
 
         // Scanner를 사용하여 출력
@@ -31,9 +31,10 @@ public class N10871_X보다작은수 {
 
         // Scanner 닫기
         sc.close();
+
     }
 
-    // Scanner를 사용하여 X보다 작은 값들만 출력하는 함수
+    // Scanner를 사용하여 X보다 작은 값들만 출력하는 함수 (String 이용)
     public static void scanner(int N, int X, int[] arr) {
         for (int i = 0; i < N; i++) {
             if (arr[i] < X) {
@@ -42,7 +43,7 @@ public class N10871_X보다작은수 {
         }
     }
 
-    // StringBuilder를 사용하여 X보다 작은 값들만 출력하는 함수
+    // StringBuilder를 사용하여 X보다 작은 값들만 출력하는 함수 (StringBuffer와 동일)
     public static void stringBuilder(int N, int X, int[] arr) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < N; i++) {
@@ -73,5 +74,7 @@ public class N10871_X보다작은수 {
 
         // 결과 출력
         System.out.println(sb.toString().trim());  // 마지막 공백 제거
+
+        br.close();
     }
 }
