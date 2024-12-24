@@ -15,7 +15,7 @@ public class N1_03_문장속단어 {
 
     public String solution2(String str) {
         String answer = "";
-        int max = Integer.MAX_VALUE, pos;
+        int max = Integer.MIN_VALUE, pos;
         while((pos = str.indexOf(' '))!=-1){
             String tmp = str.substring(0, pos);
             int len = tmp.length();
@@ -23,13 +23,18 @@ public class N1_03_문장속단어 {
                 max = len;
                 answer = tmp;
             }
+            str = str.substring(pos+1);
         }
+        if(str.length() > max) answer = str;
         return answer;
     }
+
     public static void main(String[] args) {
         N1_03_문장속단어 T = new N1_03_문장속단어();
         Scanner kb = new Scanner(System.in);
-        String[] strArr = kb.nextLine().split(" ");
-        System.out.println(T.solution(strArr));
+//        String[] strArr = kb.nextLine().split(" ");
+        String str = kb.nextLine();
+//        System.out.println(T.solution(strArr));
+        System.out.println(T.solution2(str));
     }
 }
