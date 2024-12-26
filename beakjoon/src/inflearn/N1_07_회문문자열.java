@@ -2,22 +2,35 @@ package inflearn;
 
 import java.util.Scanner;
 
-public class N1_07_회문문자열 {
+public class N1_07_회문문자열 { // 팰린드럼
 	public String solution(String str) {
-		String answer = null;
-		char[] c = str.toUpperCase().toCharArray();
-		int lt = 0;
-		int rt = str.length()-1;
-		while (lt < rt) {
-			if(c[lt] == c[rt]) {
-				lt++;
-				rt--;
-			} else {
-				answer = "NO";
-				break;
-			}
-			answer = "YES";
-		}
+		// String answer = null;
+		// char[] c = str.toUpperCase().toCharArray();
+		// int lt = 0;
+		// int rt = str.length()-1;
+		// while (lt < rt) {
+		// 	if(c[lt] == c[rt]) {
+		// 		lt++;
+		// 		rt--;
+		// 	} else {
+		// 		answer = "NO";
+		// 		break;
+		// 	}
+		// 	answer = "YES";
+		// }
+		// return answer;
+
+		// String answer = "YES";
+		// int len = str.length();
+		// str = str.toUpperCase();
+		// for (int i = 0; i < len/2 ; i++) {
+		// 	if(str.charAt(i) != str.charAt(len-i-1)) return "NO";
+		// }
+		// return answer;
+
+		String answer = "NO";
+		String tmp = new StringBuilder(str).reverse().toString();
+		if(str.equalsIgnoreCase(tmp)) answer = "YES";
 		return answer;
 	}
 
