@@ -19,7 +19,7 @@ public class N10250_ACM호텔 {
             int roomNumber = (N - 1) / H + 1;
 
             // 방 번호 출력 (층수 + 호수 형식)
-            System.out.printf("%d%02d\n", floor, roomNumber);
+            System.out.printf("\n%d%02d", floor, roomNumber); // %d 정수, %02d 2자리 정수 표현
         }
 
         sc.close();
