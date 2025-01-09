@@ -1,4 +1,4 @@
-package inflearn;
+package inflearn.N1;
 
 import java.util.Scanner;
 
@@ -22,10 +22,8 @@ class N1_01_문자찾기 {
     public static void main(String[] args) {
         N1_01_문자찾기 T = new N1_01_문자찾기();
         Scanner kb = new Scanner(System.in);
-
         String str = kb.next();
         char c = kb.next().charAt(0);
-
         System.out.print(T.solution(str, c));
     }
 

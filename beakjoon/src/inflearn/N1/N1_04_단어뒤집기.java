@@ -1,4 +1,4 @@
-package inflearn;
+package inflearn.N1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -17,7 +17,7 @@ public class N1_04_단어뒤집기 {
 				lt++;
 				rt--;
 			}
-			String tmp = String.valueOf(s); // String화
+			String tmp = String.valueOf(s); // char타입을 String타입으로
 			answer.add(tmp);
 		}
 		// for(String x : str) {

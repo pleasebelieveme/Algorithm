@@ -1,9 +1,11 @@
-package inflearn;
+package inflearn.N1;
 
 import java.util.Scanner;
 
 public class N1_07_회문문자열 { // 팰린드럼
 	public String solution(String str) {
+
+		// 1.
 		// String answer = null;
 		// char[] c = str.toUpperCase().toCharArray();
 		// int lt = 0;
@@ -20,6 +22,7 @@ public class N1_07_회문문자열 { // 팰린드럼
 		// }
 		// return answer;
 
+		// 2.
 		// String answer = "YES";
 		// int len = str.length();
 		// str = str.toUpperCase();
@@ -28,6 +31,7 @@ public class N1_07_회문문자열 { // 팰린드럼
 		// }
 		// return answer;
 
+		// 3.
 		String answer = "NO";
 		String tmp = new StringBuilder(str).reverse().toString();
 		if(str.equalsIgnoreCase(tmp)) answer = "YES";

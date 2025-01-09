@@ -1,4 +1,4 @@
-package inflearn;
+package inflearn.N1;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class N1_05_특정문자뒤집기 {
 				rt--;
 			}
 		}
-		return answer = String.valueOf(c); // char배열을 스트링으로
+		return answer = String.valueOf(c); // char[]을 String으로
 	}
 	public static void main(String[] args) {
 		N1_05_특정문자뒤집기 T = new N1_05_특정문자뒤집기();
