@@ -2,7 +2,7 @@ package inflearn.N2;
 
 import java.util.Scanner;
 
-public class N02_04_피보나치수열 {
+public class N2_04_피보나치수열 {
 	public int[] solution(int n) {
 		//ArrayList<Integer> answer = new ArrayList<>();
 		int[] answer = new int[n];
@@ -26,7 +26,7 @@ public class N02_04_피보나치수열 {
 		}
 	}
 	public static void main(String[] args) {
-		N02_04_피보나치수열 T = new N02_04_피보나치수열();
+		N2_04_피보나치수열 T = new N2_04_피보나치수열();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		// for (int i : T.solution(n)) System.out.print(i + " ");
