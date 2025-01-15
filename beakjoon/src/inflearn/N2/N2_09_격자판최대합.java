@@ -3,6 +3,17 @@ package inflearn.N2;
 import java.util.Scanner;
 
 public class N2_09_격자판최대합 {
+	/*
+		10 13 10 12 15 - 60
+		12 39 30 23 11 - 115
+		11 25 50 53 15 - 154
+		19 27 29 37 27 - 139
+		19 13 30 13 19 - 94
+		|  |  |  |  |
+		71 117 149 138 87
+		[0][0] ~ [4][4] - 155
+		[0][4] ~ [4][0] - 134
+	*/
 	public int solution(int n, int[][]s) {
 		int answer = Integer.MIN_VALUE;
 		int[] ga = new int[n];
@@ -97,6 +108,5 @@ public class N2_09_격자판최대합 {
 			for (int j = 0; j < n; j++) s[i][j] = kb.nextInt();
 		}
 		System.out.println(T.solutionYou(n, s));
-
 	}
 }
