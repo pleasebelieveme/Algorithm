@@ -10,7 +10,7 @@ public class N11720_숫자의합 {
         char[] cNum = sNum.toCharArray();
         int sum = 0;
         for (int i=0; i<cNum.length; i++) {
-            sum += cNum[i] - '0';
+            sum += cNum[i] - '0'; // -48
         }
         System.out.print(sum);
         long l = Long.MAX_VALUE;
