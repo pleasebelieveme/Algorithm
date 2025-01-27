@@ -41,13 +41,24 @@ public class N3_05_연속된자연수의합 {
 				if(sum==n) answer++;
 			}
 		}
+		return answer;
+	}
 
+	// 강의풀이 수학으로 풀기
+	public int solutionMath(int n) {
+		int answer = 0, cnt = 1;
+		n--;
+		while (n>0) {
+			cnt++;
+			n = n - cnt; // 1과 2를 뺌, n이 15면 12
+			if(n%cnt == 0) answer++;
+		}
 		return answer;
 	}
 	public static void main(String[] args) {
 		N3_05_연속된자연수의합 T = new N3_05_연속된자연수의합();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
-		System.out.println(T.solution(n));
+		System.out.println(T.solutionMath(n));
 	}
 }
