@@ -78,7 +78,7 @@ public class N4_01_학급회장 {
 		// System.out.println(map.containsKey('A')); // 리턴값 boolean
 		// System.out.println(map.size()); // 리턴값 int
 		// System.out.println(map.remove('A')); // 리턴값 key의 밸류값 리턴
-		for(char x : map.keySet()) {하
+		for(char x : map.keySet()) {
 			// System.out.println(x + " " + map.get(x));
 			if(map.get(x)>max) {
 				max=map.get(x);
