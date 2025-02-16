@@ -5,7 +5,10 @@ import java.util.Scanner;
 public class N5_06_공주구하기 {
 	public int solution(int n, int k) {
 		int answer = 0;
-		
+
+
+
+
 		return answer;
 	}
 	public static void main(String[] args) {
