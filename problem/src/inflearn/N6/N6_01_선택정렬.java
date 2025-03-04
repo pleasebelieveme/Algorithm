@@ -17,6 +17,7 @@ public class N6_01_선택정렬 {
 	}
 
 	// 강의풀이 선택정렬로 풀기
+	// 가장 작은 수가 가장 앞에 배치
 	public int[] solutionYou(int n, int[] arr) {
 		for (int i = 0; i < n-1; i++) {
 			int idx = i;
