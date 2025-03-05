@@ -33,7 +33,7 @@ public class N5_07_교육과정설계 {
 		for (char c : mustOrder.toCharArray()) q.offer(c);
 		for (char c : myOrder.toCharArray()) {
 			if(q.contains(c)) {
-				if(c!=(char)q.poll()) return answer = "NO";
+				if(c!=(char) q.poll()) return answer = "NO";
 			}
 		}
 		if(!q.isEmpty()) return answer="NO";
