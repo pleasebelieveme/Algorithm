@@ -39,3 +39,5 @@ nbdist/
 ### 불필요한 기본 문서 제거 ###
 HELP.md
 .gradle/
+
+
