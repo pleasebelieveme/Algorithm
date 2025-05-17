@@ -4,10 +4,10 @@ title: "[PR] 제목을 입력해주세요"
 labels: []
 body:
   - type: input
-    id: issue
+    id: 🔗 issue
     attributes:
       label: 🔗 Issue 번호
-      description: 연결된 이슈 번호를 입력하세요 (예: close #1)
+      description: 연결된 이슈 번호를 입력하세요. 예시) close #1)
       placeholder: "close #"
     validations:
       required: true
