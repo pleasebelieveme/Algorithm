@@ -5,6 +5,13 @@ package alco;
  * 인덱스로 데이터를 찾으면 시간복잡도는 O(1)이다. 보통 알고리즘은 시간복잡도를 위주로 학습.
  */
 public class L2_Array {
+    /**
+     * Demonstrates basic array operations and their time complexities, including direct access, modification, iteration, and linear search.
+     *
+     * Initializes integer arrays, accesses and modifies elements by index, prints array contents, and performs a linear search for a specific value.
+     *
+     * @param args command-line arguments (not used)
+     */
     public static void main(String[] args) {
 
         // 시간복잡도 O(1)
