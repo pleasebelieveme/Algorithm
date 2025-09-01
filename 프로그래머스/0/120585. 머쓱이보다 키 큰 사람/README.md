@@ -1,10 +1,10 @@
 # [level 0] 머쓱이보다 키 큰 사람 - 120585 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120585) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120585?language=java) 
 
 ### 성능 요약
 
-메모리: 10.1 MB, 시간: 0.01 ms
+메모리: 78.7 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 09월 02일 00:04:00
+2025년 09월 02일 00:04:08
 
 ### 문제 설명
 
