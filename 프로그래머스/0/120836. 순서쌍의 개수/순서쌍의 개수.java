@@ -4,6 +4,7 @@ class Solution {
         
         // 약수갯수 찾기
         for (int i = 1; i*i <= n; i++) {
+        // for (int i = 1; i <= Math.sqrt(n); i++) {
             if (n%i == 0) {
                 if (i*i == n) {
                     answer += 1; // (i, i)인 경우 (중복 X)
