@@ -18,8 +18,9 @@ public class N6_09_뮤직비디오_결정알고리즘 {
 
 	public int solution(int n, int m, int[] arr) {
 		int answer = 0;
-		int lt = Arrays.stream(arr).max().getAsInt();
-		int rt = Arrays.stream(arr).sum();
+		// 리덕션 찾아보기!
+		int lt = Arrays.stream(arr).max().getAsInt(); // Optional<Integer>로 반환하기에 getAsInt() 함수가 필요!
+		int rt = Arrays.stream(arr).sum(); // sum()은 해당 타입으로 반환.
 		while (lt <= rt) {
 			int mid = (lt+rt)/2;
 			if(count(arr, mid)<=m) {
