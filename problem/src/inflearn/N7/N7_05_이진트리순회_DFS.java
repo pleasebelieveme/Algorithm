@@ -8,7 +8,7 @@ class Node {
 		lt=rt=null;
 	}
 }
-public class N07_05_이진트리순회_DFS {
+public class N7_05_이진트리순회_DFS {
 	Node root;
 	public void DFS(Node root) {
 		if(root==null) return;
@@ -22,7 +22,7 @@ public class N07_05_이진트리순회_DFS {
 		}
 	}
 	public static void main(String[] args) {
-		N07_05_이진트리순회_DFS tree = new N07_05_이진트리순회_DFS();
+		N7_05_이진트리순회_DFS tree = new N7_05_이진트리순회_DFS();
 		tree.root = new Node(1);
 		tree.root.lt = new Node(2);
 		tree.root.rt = new Node(3);
