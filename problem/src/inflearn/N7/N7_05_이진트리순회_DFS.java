@@ -1,15 +1,17 @@
 package inflearn.N7;
 
-class Node {
-	int data;
-	Node lt, rt;
-	public Node(int val) {
-		data = val;
-		lt=rt=null;
-	}
-}
 public class N7_05_이진트리순회_DFS {
-	Node root;
+
+	private static class Node {
+		int data;
+		Node lt, rt;
+
+		public Node(int val) {
+			this.data = val;
+		}
+	}
+
+	private Node root;
 	public void DFS(Node root) {
 		if(root==null) return;
 		else {
@@ -29,7 +31,7 @@ public class N7_05_이진트리순회_DFS {
 		tree.root.lt.lt = new Node(4);
 		tree.root.lt.rt = new Node(5);
 		tree.root.rt.lt = new Node(6);
-		tree.root.rt.lt = new Node(7);
+		tree.root.rt.rt = new Node(7);
 		tree.DFS(tree.root);
 	}
 }
