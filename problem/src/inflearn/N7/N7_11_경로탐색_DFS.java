@@ -24,7 +24,7 @@ public class N7_11_경로탐색_DFS {
 		N7_11_경로탐색_DFS T = new N7_11_경로탐색_DFS();
 		Scanner kb = new Scanner(System.in);
 		n = kb.nextInt(); // 노드의 갯수
-		m = kb.nextInt(); // 간선의 갯ㅜ
+		m = kb.nextInt(); // 간선의 갯수
 		gragh = new int[n+1][n+1];
 		check = new int[n+1];
 		for(int i=0; i<m; i++) {
