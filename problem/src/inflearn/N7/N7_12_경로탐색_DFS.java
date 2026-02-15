@@ -2,7 +2,7 @@ package inflearn.N7;
 
 import java.util.Scanner;
 
-public class N7_11_경로탐색_DFS {
+public class N7_12_경로탐색_DFS {
 
 	static int n, m, answer = 0;
 	static int[][] gragh;
@@ -21,7 +21,7 @@ public class N7_11_경로탐색_DFS {
 	}
 
 	public static void main(String[] args) {
-		N7_11_경로탐색_DFS T = new N7_11_경로탐색_DFS();
+		N7_12_경로탐색_DFS T = new N7_12_경로탐색_DFS();
 		Scanner kb = new Scanner(System.in);
 		n = kb.nextInt(); // 노드의 갯수
 		m = kb.nextInt(); // 간선의 갯수

@@ -3,7 +3,7 @@ package inflearn.N7;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class N7_12_경로탐색_인접리스트 {
+public class N7_13_경로탐색_인접리스트 {
 
 	static int n, m, answer = 0;
 	static ArrayList<ArrayList<Integer>> graph;
@@ -22,7 +22,7 @@ public class N7_12_경로탐색_인접리스트 {
 	}
 
 	public static void main(String[] args) {
-		N7_12_경로탐색_인접리스트 T = new N7_12_경로탐색_인접리스트();
+		N7_13_경로탐색_인접리스트 T = new N7_13_경로탐색_인접리스트();
 		Scanner kb = new Scanner(System.in);
 		n = kb.nextInt(); // 노드의 갯수
 		m = kb.nextInt(); // 간선의 갯수
