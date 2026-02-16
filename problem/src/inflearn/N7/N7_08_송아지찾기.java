@@ -19,9 +19,9 @@ public class N7_08_송아지찾기 {
 			for(int i=0; i<length; i++) {
 				int x = queue.poll();
 				// if(x==e) return level;
-				for(int j=0; i<3; j++) {
-					int next = x + distance[j];
-					if(x==e) return level+1;
+				for(int j=0; j<3; j++) {
+					int next = x+distance[j];
+					if(next==e) return level+1;
 					if(next >= 1 && next <= 10000 && ch[next] == 0) {
 						ch[next] = 1;
 						queue.offer(next);
