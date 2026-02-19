@@ -2,6 +2,9 @@ package inflearn.N8;
 
 import java.util.Scanner;
 
+// binomial 이항의
+// sequence 수열
+// permutation 순열
 public class N8_08_수열추측하기 {
 	static int[] binomial, sequence, visited;
 	static int n, targetSum;
@@ -43,7 +46,7 @@ public class N8_08_수열추측하기 {
 		Scanner kb = new Scanner(System.in);
 		n = kb.nextInt();
 		targetSum = kb.nextInt();
-		binomial = new int[n];
+		binomial = new int[n]; // 이항의
 		sequence = new int[n];
 		visited = new int[n+1];
 		for (int i = 0; i < n; i++) {
