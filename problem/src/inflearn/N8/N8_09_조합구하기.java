@@ -14,7 +14,6 @@ public class N8_09_조합구하기 {
 			for(int i=start; i<=maxNumber; i++) {
 				selected[level] = i;
 				DFS(level+1, i+1);
-
 			}
 		}
 	}
