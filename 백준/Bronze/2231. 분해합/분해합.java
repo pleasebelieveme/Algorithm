@@ -2,31 +2,25 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static int getSum(int n) {
-        int sum = n;
-
-        while(n > 0) {
-            sum += n % 10;
-            n /= 10;
-        }
-
-        return sum;
-    }
-
     public static void main(String[] args) {
-
+        int answer = 0;
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        int answer = 0;
+        for(int i = Math.max(1, N - 54); i <= N; i++) {
+            int sum = i;
+            int temp = i;
+            while(temp > 0) {
+                sum += temp % 10;
+                temp /= 10;
+            }
 
-        for(int i = 1; i <= N; i++) {
-            if(getSum(i) == N) {
+            if(sum == N) {
                 answer = i;
                 break;
             }
         }
 
-        System.out.println(answer);
+        System.out.print(answer);
     }
 }
