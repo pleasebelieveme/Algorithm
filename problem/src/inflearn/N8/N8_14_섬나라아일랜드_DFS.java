@@ -2,7 +2,7 @@ package inflearn.N8;
 
 import java.util.Scanner;
 
-public class N8_13_섬나라아일랜드_DFS {
+public class N8_14_섬나라아일랜드_DFS {
 	static int answer = 0, n;
 	static int[] dx = {-1, -1, 0, 1, 1, 1, 0, -1}; // 12시부터 시계방향
 	static int[] dy = {0, 1, 1, 1, 0, -1, -1, -1};
@@ -28,7 +28,7 @@ public class N8_13_섬나라아일랜드_DFS {
 		}
 	}
 	public static void main(String[] args) {
-		N8_13_섬나라아일랜드_DFS T = new N8_13_섬나라아일랜드_DFS();
+		N8_14_섬나라아일랜드_DFS T = new N8_14_섬나라아일랜드_DFS();
 		Scanner kb = new Scanner(System.in);
 		n = kb.nextInt(); // 지도격자크기
 		int[][] arr = new int[n][n];
