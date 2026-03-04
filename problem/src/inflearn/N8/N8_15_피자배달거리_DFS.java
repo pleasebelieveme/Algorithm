@@ -13,7 +13,7 @@ public class N8_15_피자배달거리_DFS {
 		}
 	}
 
-	static int n, m, len, answer = Integer.MIN_VALUE;
+	static int n, m, len, answer = Integer.MAX_VALUE;
 	static int[] combi;
 	static ArrayList<Point> house, pizza;
 	public void DFS(int level, int s) {
@@ -22,7 +22,7 @@ public class N8_15_피자배달거리_DFS {
 			for(Point h : house) {
 				int distance = Integer.MAX_VALUE;
 				for(int i : combi) {
-					distance = Math.min(distance, Math.abs(h.x-pizza.get(i).x) + Math.abs(h.x-pizza.get(i).y));
+					distance = Math.min(distance, Math.abs(h.x-pizza.get(i).x)+Math.abs(h.y-pizza.get(i).y));
 				}
 				sum += distance;
 			}
