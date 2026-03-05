@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class N9_1_씨름선수 {
+public class N9_01_씨름선수 {
 	static class Body implements Comparable<Body> {
 		public int height, weight;
 		Body(int height, int weight) {
@@ -30,7 +30,7 @@ public class N9_1_씨름선수 {
 		return count;
 	}
 	public static void main(String[] args) {
-		N9_1_씨름선수 T = new N9_1_씨름선수();
+		N9_01_씨름선수 T = new N9_01_씨름선수();
 		Scanner kb = new Scanner(System.in);
 		int n = kb.nextInt();
 		ArrayList<Body> arr = new ArrayList<>();
