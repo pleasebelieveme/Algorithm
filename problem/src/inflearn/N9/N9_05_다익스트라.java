@@ -8,10 +8,10 @@ import java.util.Scanner;
 public class N9_05_다익스트라 {
 	// 가중치 방향 그래프
 	static class Edge implements Comparable<Edge> {
-		public int vex; // 정점
+		public int vertex; // 정점
 		public int cost; // 가중치 값
 		Edge(int vex, int cost) {
-			this.vex = vex;
+			this.vertex = vertex;
 			this.cost = cost;
 		}
 		@Override
@@ -29,12 +29,13 @@ public class N9_05_다익스트라 {
 		distance[v] = 0;
 		while (!pQ.isEmpty()) {
 			Edge tmp = pQ.poll();
-			int now = tmp.vex;
+			int now = tmp.vertex;
 			int nowCost = tmp.cost;
+			if(nowCost > distance[now]) continue;
 			for(Edge ob : graph.get(now)) {
-				if(distance[ob.vex] > nowCost+ob.cost) {
-					distance[ob.vex] = nowCost+ob.cost;
-					pQ.offer(new Edge(ob.vex, nowCost+ob.cost));
+				if(distance[ob.vertex] > nowCost+ob.cost) {
+					distance[ob.vertex] = nowCost+ob.cost;
+					pQ.offer(new Edge(ob.vertex, nowCost+ob.cost));
 				}
 			}
 		}
