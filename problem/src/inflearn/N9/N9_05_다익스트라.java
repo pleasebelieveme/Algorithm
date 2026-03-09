@@ -6,6 +6,7 @@ import java.util.PriorityQueue;
 import java.util.Scanner;
 
 public class N9_05_다익스트라 {
+	// 가중치 방향 그래프
 	static class Edge implements Comparable<Edge> {
 		public int vex; // 정점
 		public int cost; // 가중치 값
