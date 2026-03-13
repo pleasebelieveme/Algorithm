@@ -23,8 +23,8 @@ public class N9_06_친구인가 {
 		int n = kb.nextInt();
 		int m = kb.nextInt();
 		unf = new int[n+1];
-		for(int i=1; i<n; i++) unf[i] = i;
-		for(int i=1; i<m; i++) {
+		for(int i=1; i<=n; i++) unf[i] = i;
+		for(int i=0; i<m; i++) {
 			int a = kb.nextInt();
 			int b = kb.nextInt();
 			Union(a, b);

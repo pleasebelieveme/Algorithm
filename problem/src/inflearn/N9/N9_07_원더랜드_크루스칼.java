@@ -45,6 +45,7 @@ public class N9_07_원더랜드_크루스칼 {
 			arr.add(new Edge(a, b, c));
 		}
 		int answer = 0;
+		int count = 0;
 		Collections.sort(arr);
 		for(Edge ob : arr) {
 			int fv1 = Find(ob.v1);
@@ -52,6 +53,8 @@ public class N9_07_원더랜드_크루스칼 {
 			if(fv1 != fv2) {
 				answer += ob.cost;
 				Union(ob.v1, ob.v2);
+				count++;
+				if(count == n-1) break;
 			}
 		}
 		System.out.println(answer);
