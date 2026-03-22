@@ -12,6 +12,7 @@ public class N10_02_돌다리건너기 {
 		}
 		return dy[n+1];
 	}
+
 	public static void main(String[] args) {
 		N10_02_돌다리건너기 T = new N10_02_돌다리건너기();
 		Scanner kb = new Scanner(System.in);

@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 // DFS로 풀면 시간초과
 public class N10_06_최대점수구하기_냅색 {
-
 	public static void main(String[] args) {
 		N10_06_최대점수구하기_냅색 T = new N10_06_최대점수구하기_냅색();
 		Scanner kb = new Scanner(System.in);

@@ -19,6 +19,7 @@ public class N10_04_가장높은탑쌓기 {
 	}
 
 	static int[] dy;
+
 	public int solution(ArrayList<Brick> arr) {
 		int answer = 0;
 		Collections.sort(arr);
@@ -36,6 +37,7 @@ public class N10_04_가장높은탑쌓기 {
 		}
 		return answer;
 	}
+
 	public static void main(String[] args) {
 		N10_04_가장높은탑쌓기 T = new N10_04_가장높은탑쌓기();
 		Scanner kb = new Scanner(System.in);

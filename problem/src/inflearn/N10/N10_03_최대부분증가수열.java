@@ -17,6 +17,7 @@ public class N10_03_최대부분증가수열 {
 		}
 		return answer;
 	}
+
 	public static void main(String[] args) {
 		N10_03_최대부분증가수열 T = new N10_03_최대부분증가수열();
 		Scanner kb = new Scanner(System.in);
