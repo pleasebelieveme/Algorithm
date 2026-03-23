@@ -17,7 +17,6 @@ public class N10_05_동전교환_냅색 {
 		}
 		return dy[m];
 	}
-
 	public static void main(String[] args) {
 		N10_05_동전교환_냅색 T = new N10_05_동전교환_냅색();
 		Scanner kb = new Scanner(System.in);
