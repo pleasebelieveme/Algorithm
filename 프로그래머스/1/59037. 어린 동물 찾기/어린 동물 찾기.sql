@@ -1,0 +1,5 @@
+SELECT ANIMAL_ID, NAME
+FROM ANIMAL_INS
+-- 보호 시작 시 상태가 'Aged'가 아닌 동물만 필터링
+WHERE INTAKE_CONDITION != 'Aged'
+ORDER BY ANIMAL_ID;
