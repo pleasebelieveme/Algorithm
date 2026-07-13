@@ -20,6 +20,6 @@ public class N17 {
 		int r2 = calc.cc('c', 'a');
 		char r3 = (char) calc.cc('3');
 
-		System.out.println(r1 + r2 + "2" + r3);
+		System.out.println(r1 + r2 + "2" + r3); // 1123
 	}
 }
